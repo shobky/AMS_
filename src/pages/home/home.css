@@ -1,0 +1,233 @@
+@media (width > 800px) {
+    .carousel_arrow {
+        display: flex;
+        gap: 25px;
+        position: absolute;
+        right: 7vw;
+        top: 88vh;
+    }
+
+    .carousel_ico {
+        font-size: 50px;
+        color: white;
+    }
+
+    .carousel_ico:hover {
+        opacity: .6;
+        cursor: pointer;
+    }
+
+    .home_section-1 {
+        background-image: url('../../assets/Ship-h-s-1.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .home_section-2 {
+        background-image: url('../../assets/ship-h-s-2.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .home_section-3 {
+        background-image: url('../../assets/shiop-h-s-3.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .home_section-1_content {
+        padding-top: 100px;
+    }
+
+    .home_section-1_content {
+        position: relative;
+        top: 40vh;
+        left: 7vw;
+        width: fit-content;
+        color: white;
+        padding: 75px;
+        min-height: 30vh;
+        background-color: rgba(0, 0, 0, 0.267);
+    }
+
+    .home_s-1_head {
+        font-size: 45px;
+        /* border-bottom: 2px solid white; */
+        width: fit-content;
+        font-family: montserrat-regular;
+    }
+
+    .home_s1_article {
+        margin-top: 15px;
+        font-family: montserrat-regular;
+        font-size: 21px;
+        width: 50vw;
+        line-height: 30px;
+    }
+
+    .home_article_link {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-top: 10px;
+        font-family: montserrat-regular;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .home_article_link-ico {
+        font-size: 25px;
+        position: relative;
+        top: 2px;
+    }
+
+    .home_article_link:hover {
+        opacity: .7;
+    }
+
+    .home_artice_bottom-txt {
+        position: relative;
+        top: 40px;
+        font-family: sans-serif;
+        width: fit-content;
+        max-width: 55vw;
+        font-size: 18px;
+        letter-spacing: .5px;
+        line-height: 30px;
+
+    }
+
+    .home_carousel {
+        display: flex;
+        justify-content: space-between;
+        width: 300vw;
+        transition: ease-in-out .8s;
+    }
+}
+
+@media (width < 800px) {
+    .carousel_arrow {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        right: 5vw;
+        top: 91%;
+    }
+
+    .carousel_ico {
+        font-size: 32px;
+        color: white;
+    }
+
+    .carousel_ico:active {
+        opacity: .6;
+        cursor: pointer;
+    }
+
+    .home_section-1 {
+        background-image: url('../../assets/Ship-h-s-1.jpg');
+        background-size: cover;
+        background-position: calc(80%);
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .home_section-2 {
+        background-image: url('../../assets/ship-h-s-2.jpg');
+        background-size: cover;
+        background-position: calc(10%);
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .home_section-3 {
+        background-image: url('../../assets/shiop-h-s-3.jpg');
+        background-size: cover;
+        background-position: calc(70%);
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .home_section-1_content {
+        padding-top: 100px;
+    }
+
+    .home_section-1_content {
+        position: relative;
+        top: 42%;
+        left: 7vw;
+        width: fit-content;
+        color: white;
+        min-height: 30vh;
+    }
+
+    .home_s-1_head {
+        font-size: 35px;
+        /* border-bottom: 2px solid white; */
+        width: fit-content;
+        font-family: montserrat-regular;
+    }
+
+    .home_s1_article {
+        margin-top: 15px;
+        font-family: montserrat-regular;
+        font-size: 12px;
+        width: 70vw;
+    }
+
+    .home_article_link {
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-top: 10px;
+        font-family: montserrat-regular;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .home_article_link-ico {
+        font-size: 25px;
+        position: relative;
+        top: 2px;
+    }
+
+    .home_article_link:hover {
+        opacity: .7;
+    }
+
+    .home_artice_bottom-txt {
+        position: relative;
+        top: 40px;
+        font-family: montserrat-regular;
+        font-size: 12px;
+        width: 90vw;
+
+    }
+
+    .home_carousel {
+        display: flex;
+        justify-content: space-between;
+        width: 300vw;
+        font-family: montserrat-regular;
+        transition: ease-in-out .8s;
+
+
+
+    }
+
+
+}
