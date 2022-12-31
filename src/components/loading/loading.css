@@ -1,0 +1,47 @@
+.loading_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column  ;
+    width: 100%;
+}
+.loading_logo{
+    width: 150px;
+    height: 150px;
+    animation: logoanim 1s linear infinite;
+}
+
+@keyframes logoanim {
+    from{
+        opacity: .5;
+        transform: rotate(0deg);
+
+    }
+    to{
+        opacity: .8;
+        transform: rotate(365deg);
+    }
+}
+.loading_txt{
+    font-family: montserrat-regular;
+    font-size: 18px;
+    position: relative;
+    left: 5px;
+    font-weight: bold;
+    animation: txtanim 1.5s infinite;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+@keyframes txtanim  {
+    10%{
+        opacity: .7;
+    }
+    80%{
+        opacity: .8;
+    }
+}

@@ -1,0 +1,267 @@
+.carousel-contaienr {
+    height: 100vh;
+}
+
+.carusel_btn {
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.carusel_btn:active {
+    opacity: .6;
+    cursor: pointer;
+}
+
+.carousel_img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+img {
+    transition: ease-in-out .5s;
+}
+
+
+
+/* fjadklfjakl;fd */
+
+@media (width > 800px) {
+    .carousel_img1 {
+        background-image: url('../../assets/ship1.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .carousel_img2 {
+        background-image: url('../../assets/ship.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .carousel_img3 {
+        background-image: url('../../assets/ship2.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .carousel_img4 {
+        background-image: url('../../assets/pipeshq.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    .carousle_btn-group {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 84.5vh;
+        right: 9vw;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .carousel_article {
+        padding-top: 40vh;
+        margin-left: 15vw;
+        color: white;
+    }
+
+    .carousel_article_black {
+        padding-top: 40vh;
+        margin-left: 15vw;
+        color: rgb(0, 0, 0);
+
+    }
+
+    .carousel_article_black .carousle_link {
+        color: black;
+    }
+
+    .carousel_caption {
+        font-size: 45px;
+        width: fit-content;
+        font-family: montserrat-regular;
+        margin-bottom: 17vh;
+    }
+
+    .carousel_artilce {
+        margin-top: 15px;
+        font-family: montserrat-regular;
+        font-size: 21px;
+        width: 50vw;
+        line-height: 30px;
+    }
+
+    .carousle_link {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-top: 40px;
+        font-family: montserrat-regular;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        width: fit-content;
+    }
+
+
+    .carousle_link:hover {
+        opacity: .7;
+    }
+
+    .carousel_footer {
+        position: relative;
+        font-family: montserrat-regular;
+        margin-top: 10px;
+        width: fit-content;
+        max-width: 55vw;
+        font-size: 21px;
+
+    }
+}
+
+@media (width < 800px) {
+    .carousel_img1 {
+        background-image: url('../../assets/ship1.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 110vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .carousel_img2 {
+        background-image: url('../../assets/ship.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .carousel_img3 {
+        background-image: url('../../assets/ship2.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .carousel_img4 {
+        background-image: url('../../assets/pipeshq.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .carousle_btn-group {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 80.5vh;
+        right: 5vw;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .carousel_article {
+        padding-top: 50vh;
+        margin-left: 10vw;
+        color: white;
+    }
+
+    .carousel_article_black {
+        padding-top: 50vh;
+        margin-left: 10vw;
+        color: rgb(0, 0, 0);
+
+    }
+
+    .carousel_article_black .carousle_link {
+        color: black;
+    }
+
+    .carousel_caption {
+        font-size: 35px;
+        width: fit-content;
+        font-family: montserrat-regular;
+    }
+
+    .carousel_artilce {
+        margin-top: 15px;
+        font-family: montserrat-regular;
+        font-size: 15px;
+        width: 88vw;
+    }
+
+    .carousle_link {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-top: 20px;
+        font-family: montserrat-regular;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        width: fit-content;
+    }
+
+
+    .carousle_link:active {
+        opacity: .7;
+    }
+
+    .carousel_footer {
+        position: relative;
+        font-family: montserrat-regular;
+        margin-top: 10px;
+        width: fit-content;
+        width: 88vw;
+        font-size: 15px;
+
+    }
+}
