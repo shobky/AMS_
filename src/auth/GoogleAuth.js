@@ -10,6 +10,7 @@ const GoogleAuth = () => {
     const navigate = useNavigate()
     const loginWithGoogle = () => {
         signInWithGoogleRedirect().then(() => {
+            navigate('/')
             getRedirectResult(auth)
                 .then((res) => {
                     const credential = GoogleAuthProvider.credentialFromResult(res);
@@ -17,8 +18,6 @@ const GoogleAuth = () => {
                     //
                     setUser(res.user)
                     console.log({ user: res.user, token, credential })
-                }).then(() => {
-                    navigate('/')
                 })
         }).catch((err) => {
             alert(err.message)
