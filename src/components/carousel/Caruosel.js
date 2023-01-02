@@ -4,6 +4,14 @@ import { TfiArrowCircleLeft, TfiArrowCircleRight } from 'react-icons/tfi'
 import { Link } from 'react-router-dom';
 import { BsLink45Deg } from 'react-icons/bs';
 import { useEffect } from 'react';
+import img1 from '../../assets/ship1.jpg'
+import img2 from '../../assets/ship.jpg'
+import img3 from '../../assets/ship2.jpg'
+import img4 from '../../assets/pipeshq.jpg'
+import img5 from '../../assets/trading.jpg'
+import img6 from '../../assets/parts.jpg'
+
+
 
 const Carousel = () => {
     // Initialize the useState hook to store the current index
@@ -15,28 +23,34 @@ const Carousel = () => {
         {
             src: 'img1', header: 'SHIP OWNER',
             article: "Reliable, sustainable and safe services across the MIDDLE EAST, RED SEA, ARABIAN GULD AND COAST OF AFRICA",
-            link: '',
-            footer: 'our fleet includes containers, heavy lifts, roros, rolos, tugs, passsenger and crew boats'
+            link: 'owner',
         },
         {
             src: 'img2', header: 'SHIP BUILDING',
             article: "We specialize in building & repairign all kinds of sihps. Approved by  the Classification Societies Stadndard's Requirements.",
             link: '',
-            footer: 'Our welder team have most of classification societies approval.'
         },
         {
             src: 'img3', header: 'SHIP SALVAGE',
             article: "AMS is the process of rescuing a ship and it's cargo. We are always alert and for the rescue in all emergencies.",
             link: 'salvage',
-            footer: ''
         },
         {
             src: 'img4', header: 'TANKS & PIPES',
             article: "AMS is one of the main manufactures of storage tanks, pressure vessels and vertical storage tanks oil storeage terminals in the UAE and other countries.",
             link: 'tanks&pipes',
-            footer: '',
             color: 'carousel_article_black'
-        }
+        },
+        {
+            src: 'img5', header: 'DISEL TRADING',
+            article: "AMS is one of the premium Importers and exporters of petroleum products in the Middle East",
+            link: '',
+        },
+        {
+            src: 'img6', header: 'SHIP PARTS',
+            article: "AMS offers a wide range of products suitable for diesel engines and more",
+            link: '',
+        },
     ];
 
     // Function to handle the next button click
@@ -120,6 +134,13 @@ const Carousel = () => {
                 <button className='carusel_btn carusel_btn-prev' onClick={handlePrevClick}><TfiArrowCircleLeft /></button>
                 <button className='carusel_btn carusel_btn-next' onClick={handleNextClick}><TfiArrowCircleRight /></button>
             </div>
+            <img alt='' src={img1} style={{ display: "none" }} />
+            <img alt='' src={img2} style={{ display: "none" }} />
+            <img alt='' src={img3} style={{ display: "none" }} />
+            <img alt='' src={img4} style={{ display: "none" }} />
+            <img alt='' src={img5} style={{ display: "none" }} />
+            <img alt='' src={img6} style={{ display: "none" }} />
+
         </div>
     )
 }

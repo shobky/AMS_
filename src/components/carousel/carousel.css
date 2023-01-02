@@ -76,6 +76,27 @@ img {
         z-index: -1;
     }
 
+    .carousel_img5 {
+        background-image: url('../../assets/trading.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .carousel_img6 {
+        background-image: url('../../assets/parts.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
+
 
     .carousle_btn-group {
         display: flex;
@@ -151,7 +172,7 @@ img {
     .carousel_img1 {
         background-image: url('../../assets/ship1.jpg');
         background-size: cover;
-        background-position: bottom;
+        background-position: calc(5%);
         background-repeat: no-repeat;
         width: 100%;
         height: 110vh;
@@ -177,7 +198,7 @@ img {
     .carousel_img3 {
         background-image: url('../../assets/ship2.jpg');
         background-size: cover;
-        background-position: bottom;
+        background-position: calc(10%);
         background-repeat: no-repeat;
         width: 100%;
         height: 100vh;
@@ -195,6 +216,34 @@ img {
         width: 100%;
         height: 100vh;
         position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .carousel_img5 {
+        background-image: url('../../assets/trading.jpg');
+        background-size: cover;
+        background-position: calc(30%);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .carousel_img6 {
+        background-image: url('../../assets/parts.jpg');
+        background-size: cover;
+        background-position: calc(10%);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
         z-index: -1;
     }
 

@@ -1,6 +1,4 @@
-.km_pipes {height: 100vh;
-}
-@media (width < 800px) {
+@media (width < 900px) {
     .km_pipes_back-ico {
         font-size: 27px;
         /* color: rgb(29, 105, 247); */
@@ -17,6 +15,7 @@
         margin-top: 30px;
     }
 
+   
     .km_pipes_article {
         font-size: 12px;
         margin-top: 30px;
@@ -54,7 +53,8 @@
     }
 
 }
-@media (width > 800px) {
+
+@media (width > 900px) {
     .km_pipes_back-ico {
         font-size: 35px;
         /* color: rgb(29, 105, 247); */
@@ -64,6 +64,7 @@
     .km_pipes {
         margin: 30px 60px 0 60px;
         padding-bottom: 3vh;
+        min-height: 100vh;
     }
 
     .km_pipes_header {
@@ -78,17 +79,23 @@
 
     }
 
-    .km_pipes_article_sl{
-        min-width: 40vw;
+    /* .km_pipes_article_sl {
         display: flex;
+    } */
+    .km_pipes_flex{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: baseline;
     }
+
     .km_pipes_arcl__bold {
         font-weight: bold;
         color: rgb(38, 145, 245);
     }
 
     .kmk_pipes_arcl_img {
-        height: 57vh;
+        width: 40vw;
         border-radius: 25px;
         margin-top: 10px;
         margin-bottom: 35px;
@@ -110,7 +117,6 @@
 
     }
 
-    .km_pipes_flex-p {
-    }
+    .km_pipes_flex-p {}
 
 }

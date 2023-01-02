@@ -13,10 +13,14 @@ const Footer = () => {
                 <div className='footer_sec'>
                     <div className='footer_link-group'>
                         <p className='footer_header'>BROWSE  MORE</p>
-                        <Link to='/' className='footer_link'>Ship owner <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
-                        <Link to='/' className='footer_link'>Ship building <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
-                        <Link to='/salvage' className='footer_link'>Ship salvage <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
-                        <Link to='/tanks&pipes' className='footer_link'>Tanks and Pipes <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
+                        <Link to='/' className='footer_link'>HOME <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
+                        <Link to='/owner' className='footer_link'>SHIP OWNER <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
+                        <Link to='/building' className='footer_link'>SHIP BUILDING <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
+                        <Link to='/salvage' className='footer_link'>SHIP SALVAGE <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
+                        <Link to='/tanks&pipes' className='footer_link'>TANKS AND PIPES <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
+                        <Link to='/parts' className='footer_link'>SHIP PARTS <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
+                        <Link to='/trading' className='footer_link'>DISEL TRADING <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
+
                     </div>
                     <GiShipBow className='footer-ship-ico' />
                 </div>
