@@ -12,8 +12,8 @@
 .auth_ship-ico{
     font-size: 3rem;
     position: absolute;
-    right: 43vw;
-    top: 49vh;
+    right: 43%;
+    top: 50vh;
     z-index: 1;
     
 }
@@ -83,8 +83,11 @@
     font-size: 20px;
     margin-left: 2px;
     background-color: rgb(255, 255, 255);
-    padding: 9.5px;
-    border-radius: 25px;
+    padding: 8.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 
 }
 
@@ -94,7 +97,6 @@
     align-items: center;
     gap: 15px;
     justify-content: center;
-    height: 85vh;
     position: relative;
     z-index: 2;
 

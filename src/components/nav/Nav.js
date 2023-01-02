@@ -10,9 +10,8 @@ import { signOut } from 'firebase/auth'
 
 const Nav = ({ active, theme, activeNavMb }) => {
 
-    
+    const navigate = useNavigate()
 
-    
     const logout = () => {
         signOut(auth)
 
