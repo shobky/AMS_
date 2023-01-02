@@ -25,7 +25,8 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth()
 const provider = new GoogleAuthProvider();
-export const signInWithGoogle = () => signInWithPopup(auth,provider);
+export const signInWithGooglePopup = () => signInWithPopup(auth,provider);
+
 // export const db = getFirestore(app);
 // export const storage = getStorage(app);
 // auth.languageCode = 'it'

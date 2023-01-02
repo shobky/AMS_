@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { auth, signInWithGoogle } from '../firebase/Config'
+import { auth, signInWithGooglePopup } from '../firebase/Config'
 import { getRedirectResult, GoogleAuthProvider } from 'firebase/auth'
+import './auth.css'
+import { FcGoogle } from 'react-icons/fc'
 
 const GoogleAuth = () => {
-    const [ user, setUser] = useState()
+    const [user, setUser] = useState()
 
     const loginWithGoogle = () => {
-        signInWithGoogle()
+        signInWithGooglePopup()
         getRedirectResult(auth)
             .then((res) => {
                 const credential = GoogleAuthProvider.credentialFromResult(res);
@@ -25,8 +27,8 @@ const GoogleAuth = () => {
 
     return (
         <div>
-            <button onClick={loginWithGoogle}>loginWithGoogle</button>
-            <p>{user?.email}</p>
+            <button className='login_with_google_btn' onClick={loginWithGoogle}><span><FcGoogle /></span>Continue with Google</button>
+            {/* {user?.email} */}
         </div>
     )
 }

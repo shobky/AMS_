@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react'
 import { Route, Routes } from 'react-router'
+import Login from './auth/login/Login'
 import E404 from './components/404/E404'
 // import Auth from './auth/Auth'
 import Loading from './components/loading/Loading'
@@ -33,11 +34,11 @@ const Routeing = () => {
                     <Owner />
                 </Suspense>
             } />
-            {/* <Route path='/auth' element={
+            <Route path='/login' element={
                 <Suspense fallback={<Loading />}>
-                    <Auth />
+                    <Login />
                 </Suspense>
-            } /> */}
+            } />
 
 
         </Routes>

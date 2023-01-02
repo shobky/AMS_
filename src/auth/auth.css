@@ -1,0 +1,147 @@
+.auth {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+    margin-bottom: 15vh;
+}
+
+.auth_ship-ico{
+    font-size: 3rem;
+    position: absolute;
+    right: 43vw;
+    top: 49vh;
+    z-index: 1;
+    
+}
+.auth_logo-container {
+    text-decoration: none;
+    color: #0E73B7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.auth_logo-container p {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.auth_logo {
+    width: 43px;
+    position: relative;
+    top: -2px;
+    margin-right: -10px;
+    margin-left: -10px;
+    
+}
+
+.login_with_google_btn {
+    border: none;
+    background-color: rgb(38, 145, 245);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 42px;
+    position: relative;
+    width: fit-content;
+    padding-right: 25px;
+    box-shadow: 2px 5px 10px 1px rgba(160, 155, 155, 0.397);
+    max-width: 260px;
+    border-radius: 25px;
+
+
+}
+
+.auth_button {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    gap: 10px;
+    height: 42px;
+    position: relative;
+    width: fit-content;
+    padding-right: 25px;
+    box-shadow: 2px 5px 10px 1px rgba(160, 155, 155, 0.397);
+    width: 260px;
+    border-radius: 25px;
+    margin-top: 15vh;
+}
+
+.login_with_google_btn span {
+    font-size: 20px;
+    margin-left: 2px;
+    background-color: rgb(255, 255, 255);
+    padding: 9.5px;
+    border-radius: 25px;
+
+}
+
+.auth_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    height: 85vh;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+.auth_input {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    background-color: transparent;
+    border: 1.5px solid rgba(0, 0, 0, 0.199);
+    width: 70vw;
+    max-width: 280px;
+    padding: 10px;
+    height: 42px;
+    border-radius: 25px;
+
+}
+
+.auth_input_div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth label {
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    opacity: .5;
+}
+
+.auth_input__password::placeholder {
+    position: relative;
+    top: 6px;
+    font-size: 22px;
+}
+
+.auth_or {
+    font-weight: bold;
+    opacity: .6;
+}
+.auth_forawrd-link{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.596);
+    margin-top: 20px;
+
+}

@@ -8,12 +8,12 @@ import { IoIosArrowForward } from 'react-icons/io'
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div id='footer' className='footer'>
             <div className='footer_flexbox'>
                 <div className='footer_sec'>
                     <div className='footer_link-group'>
                         <p className='footer_header'>BROWSE  MORE</p>
-                        <Link to='/' className='footer_link'>HOME <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
+                        <Link to='/' className='footer_link'>FEATURED <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
                         <Link to='/owner' className='footer_link'>SHIP OWNER <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
                         <Link to='/building' className='footer_link'>SHIP BUILDING <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
                         <Link to='/salvage' className='footer_link'>SHIP SALVAGE <IoIosArrowForward className='footer_link_arr-ico' /> </Link>

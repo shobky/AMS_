@@ -1,26 +1,47 @@
 import React from 'react'
 import './nav.css'
 import logo from '../../assets/logo.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { CgProfile } from 'react-icons/cg'
+import { auth } from '../../firebase/Config'
+import { useState } from 'react'
+import { RiArrowDropRightLine, RiLoginCircleFill } from 'react-icons/ri'
+import { signOut } from 'firebase/auth'
 
-const Nav = ({ active, theme }) => {
+const Nav = ({ active, theme, activeNavMb }) => {
+
+    
+
+    
+    const logout = () => {
+        signOut(auth)
+
+    }
     return (
         <nav className='navigation-container'>
-            <div className='nav_header'>
-                <img alt='' className='nav_logo' src={logo} />
-                <p className='nav_name'>AMS </p>
-                {/* {
+            <div id='navHeader' className='nav_header'>
+                <div className='nav_logo-container'>
+                    <img alt='' className='nav_logo' src={logo} />
+                    <p className='nav_name'>MS </p>
+                </div>
+                {
                     window.innerWidth < 800 ?
-                        <button className='nav_mobile-ico_btn'><CgProfile  /></button> : ""
-                } */}
+                        <button onClick={activeNavMb} className='nav_mobile-ico_btn'> {auth?.currentUser ? <img src={auth?.currentUser?.photoURL} className='nav_userimg-link' alt="" /> : <CgProfile />}</button> : ""
+                }
             </div>
-            <div className='nav_links-group'>
-                <Link className={active === 'home' ? 'nav_link__active' : "nav_link "}>FEATURED</Link>
-                {/* <Link className='nav_link'>ABOUT</Link>
-                <Link className='nav_link'>VIDEOS</Link>
-                <Link className='nav_link'>CONTACT</Link>
-                <Link to='/auth' className='nav_link nav_link_ico'><CgProfile /></Link> */}
+            <div id='navMb' className='nav_links-group__inActive'>
+                <Link to='/' className={active === 'home' ? 'nav_link__active' : "nav_link "}>Featured <RiArrowDropRightLine /></Link>
+                <Link to='/about' className='nav_link'>About <RiArrowDropRightLine /></Link>
+                <Link to='/videos' className='nav_link'>Videos <RiArrowDropRightLine /></Link>
+                <a href='#footer' className='nav_link'>Contact <RiArrowDropRightLine /></a>
+                {
+                    !auth?.currentUser ?
+                        <Link to='/login' className='nav_login-link'>Login <RiLoginCircleFill /></Link>
+                        :
+                        <button onClick={logout} className='nav_logout-btn'>Logout <RiLoginCircleFill /></button>
+
+                }
+                {/* <Link to='/auth' className='nav_link nav_link_ico'><CgProfile /></Link> */}
             </div>
 
 
