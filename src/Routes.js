@@ -1,9 +1,13 @@
 import React, { Suspense } from 'react'
 import { Route, Routes } from 'react-router'
 import Login from './auth/login/Login'
+import Signup from './auth/login/Signup'
 import E404 from './components/404/E404'
 // import Auth from './auth/Auth'
 import Loading from './components/loading/Loading'
+import About from './pages/about/About'
+import UserChangeProfile from './pages/edit profile/UserChangeProfile'
+import Parts from './pages/knowMore/parts/Parts'
 const Owner = React.lazy(() => import('./pages/knowMore/owner/Owner'))
 const Home = React.lazy(() => import('./pages/home/Home'))
 const Salvage = React.lazy(() => import('./pages/knowMore/Salvage'))
@@ -14,9 +18,29 @@ const Routeing = () => {
     return (
         <Routes>
             <Route path='*' element={<E404 />} />
+            <Route path='/login' element={
+                <Suspense fallback={<Loading />}>
+                    <Login />
+                </Suspense>
+            } />
+            <Route path='/signup' element={
+                <Suspense fallback={<Loading />}>
+                    <Signup />
+                </Suspense>
+            } />
+            <Route path='/profile' element={
+                <Suspense fallback={<Loading />}>
+                    <UserChangeProfile />
+                </Suspense>
+            } />
             <Route path='/' element={
                 <Suspense fallback={<Loading />}>
                     <Home />
+                </Suspense>
+            } />
+            <Route path='/about' element={
+                <Suspense fallback={<Loading />}>
+                    <About />
                 </Suspense>
             } />
             <Route path='/salvage' element={
@@ -34,11 +58,13 @@ const Routeing = () => {
                     <Owner />
                 </Suspense>
             } />
-            <Route path='/login' element={
+            <Route path='/parts' element={
                 <Suspense fallback={<Loading />}>
-                    <Login />
+                    <Parts />
                 </Suspense>
             } />
+
+
 
 
         </Routes>

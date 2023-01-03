@@ -28,7 +28,7 @@ const Carousel = () => {
         {
             src: 'img2', header: 'SHIP BUILDING',
             article: "We specialize in building & repairign all kinds of sihps. Approved by  the Classification Societies Stadndard's Requirements.",
-            link: '',
+            link: 'building',
         },
         {
             src: 'img3', header: 'SHIP SALVAGE',
@@ -44,12 +44,12 @@ const Carousel = () => {
         {
             src: 'img5', header: 'DISEL TRADING',
             article: "AMS is one of the premium Importers and exporters of petroleum products in the Middle East",
-            link: '',
+            link: 'trading',
         },
         {
             src: 'img6', header: 'SHIP PARTS',
             article: "AMS offers a wide range of products suitable for diesel engines and more",
-            link: '',
+            link: 'parts',
         },
     ];
 

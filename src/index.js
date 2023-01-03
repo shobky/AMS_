@@ -5,11 +5,15 @@ import Routeing from './Routes';
 import './Global.css'
 import './assets/fonts/fonts.css'
 import Footer from './components/footer/Footer';
+import { AuthProvider } from './contexts/AuthContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
     <React.StrictMode>
         <BrowserRouter>
-            <Routeing />
+            <AuthProvider>
+                <Routeing />
+            </AuthProvider>
             <Footer />
         </BrowserRouter>
     </React.StrictMode>

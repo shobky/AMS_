@@ -101,6 +101,18 @@
 
 }
 
+.footer_links-header {
+    margin-top: 5px;
+    color: rgb(15, 11, 54);
+    opacity: .4;
+}
+
+.footer_knowmore-links {
+    display: flex;
+    flex-direction: column;
+    text-transform: lowercase;
+}
+
 .copyright-msg {
     text-align: center;
     margin-top: 25px;

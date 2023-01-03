@@ -1,0 +1,84 @@
+@media (width < 900px) {
+    .km_parts_back-ico {
+        font-size: 27px;
+        /* color: rgb(29, 105, 247); */
+        color: rgb(38, 145, 245);
+    }
+
+    .km_parts {
+        margin: 30px 15px 0 15px;
+        padding-bottom: 3vh;
+        min-height: 100vh;
+    }
+
+    .km_parts_header {
+        font-size: 5rem;
+        margin-top: 30px;
+    }
+
+
+    .km_parts_article {
+        font-size: 12px;
+        margin-top: 30px;
+        margin-left: 2px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .km_parts_arcl__bold {
+        font-weight: bold;
+        color: rgb(38, 145, 245);
+    }
+
+    .kmk_parts_arcl_img {
+        width: 100%;
+        border-radius: 25px;
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+
+}
+
+@media (width > 900px) {
+    .km_parts_back-ico {
+        font-size: 35px;
+        /* color: rgb(29, 105, 247); */
+        color: rgb(38, 145, 245);
+    }
+
+    .km_parts {
+        margin: 30px 60px 0 60px;
+        padding-bottom: 3vh;
+        min-height: 100vh;
+    }
+
+    .km_parts_header {
+        font-size: 4rem;
+        margin-top: 30px;
+    }
+
+    .km_parts_article {
+        font-size: 18px;
+        margin-top: 50px;
+        margin-left: 2px;
+        display: flex;
+        align-items: center;
+        gap: 5vw;
+
+    }
+
+    .km_parts_arcl__bold {
+        font-weight: bold;
+        color: rgb(38, 145, 245);
+    }
+
+    .kmk_parts_arcl_img {
+        width: 45vw;
+        border-radius: 25px;
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+
+}

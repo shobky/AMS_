@@ -4,6 +4,11 @@ import './salvage.css'
 import { BiArrowBack } from 'react-icons/bi'
 import IMbigGample from '../../assets/media/theBigGample.jpg'
 import bigGampleArticle from '../../assets/media/bigGampleArticle.jpg'
+import gna from '../../assets/media/gnaaden.jpg'
+import bab from '../../assets/media/babaden.jpg'
+import louisia from '../../assets/media/louisia.jpg'
+
+
 
 
 
@@ -57,6 +62,22 @@ const Salvage = () => {
             </div>
             <div className='km_salbg_newpaper-div'>
                 <img alt='the article from the newspaper' className='km_salvage_newspaper-img' src={bigGampleArticle} />
+            </div>
+            <h1 className='km_salvage_h1n2'>More ships salvaged by AMS</h1>
+            <div className='moreShips_big-container'>
+                <div className="km_salvage_more-ships">
+                    <img alt='' src={gna} className="km_salvage_more-ships_img" />
+                    <p className="km_salvage_more-ships_name">GNA Aden Yemen <span>2018</span></p>
+                </div>
+                <div className="km_salvage_more-ships">
+                    <img alt='' src={louisia} className="km_salvage_more-ships_img" />
+                    <p className="km_salvage_more-ships_name">LOUISA Sharjah UAE <span>2021</span></p>
+                </div>
+                <div className="km_salvage_more-ships">
+                    <img alt='' src={bab} className="km_salvage_more-ships_img" />
+                    <p className="km_salvage_more-ships_name">BAB Aden Yamen <span>2018</span></p>
+                </div>
+                <p className='km_salvage_more_adn-more'>And more <span>ALMASILA Aden Yamen 2018</span>, <span>Tugs in Adan Yamen</span>, <span>Boat sinks in Sharjah UAE</span>..</p>
             </div>
         </div>
     )

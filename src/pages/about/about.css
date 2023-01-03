@@ -1,0 +1,22 @@
+.about {
+    min-height: 40vh;
+
+}
+
+.about_contaienr {
+    margin: 125px 20px;
+
+}
+
+.about_nav {
+    background-color: rgb(255, 255, 255);
+}
+
+.about_header {
+    font-size: 2rem;
+}
+
+.about_article {
+    margin-top: 40px;
+    font-size: 1rem;
+}

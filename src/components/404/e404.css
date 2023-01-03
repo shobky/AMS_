@@ -3,17 +3,17 @@
     height: calc(100vh - 120px);
 }
 .e404 h1{
-    font-size: 7rem;
+    font-size: 6rem;
     /* font-family: montserrat-Extrabold; */
     font-family: sans-serif;
 }
 .e404_err-ms{
 margin-top: 20vh;
-font-size: 2.9rem;
+font-size: 2.7rem;
 }
 .e404_err-hint{
     margin-top: 3vh;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     color: rgb(38, 145, 245);
 
 }

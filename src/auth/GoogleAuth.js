@@ -9,8 +9,8 @@ const GoogleAuth = () => {
     const [user, setUser] = useState()
     const navigate = useNavigate()
     const loginWithGoogle = () => {
+        navigate('/')
         signInWithGoogleRedirect().then(() => {
-            navigate('/')
             getRedirectResult(auth)
                 .then((res) => {
                     const credential = GoogleAuthProvider.credentialFromResult(res);
@@ -21,6 +21,8 @@ const GoogleAuth = () => {
                 })
         }).catch((err) => {
             alert(err.message)
+            navigate('/login')
+
         })
 
     }
