@@ -2,7 +2,7 @@ import React from 'react'
 import { BiArrowBack } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import './owner.css'
-import ownerImg from '../../../assets/ownership.jpeg'
+import ownerImg from '../../../assets/media/ownership.jpeg'
 const Owner = () => {
   return (
     <div className='km_owner'>

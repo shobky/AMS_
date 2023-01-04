@@ -2,7 +2,7 @@ import React from 'react'
 import { BiArrowBack } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import './parts.css'
-import parts from '../../../assets/partShip.jfif'
+import parts from '../../../assets/media/partShip.jfif'
 
 const Parts = () => {
     return (
@@ -16,7 +16,7 @@ const Parts = () => {
                     with our clients, supporting them with all our experience and always
                     offering the optimal service and solution.</p>
                 <img className='kmk_parts_arcl_img ' src={parts} alt='crankshaft rta96' />
-            </article>
+            </article>  
         </div>
     )
 }
