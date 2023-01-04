@@ -8,6 +8,7 @@ import Loading from './components/loading/Loading'
 import About from './pages/about/About'
 import UserChangeProfile from './pages/edit profile/UserChangeProfile'
 import Parts from './pages/knowMore/parts/Parts'
+import Videos from './pages/videos/Videos'
 const Owner = React.lazy(() => import('./pages/knowMore/owner/Owner'))
 const Home = React.lazy(() => import('./pages/home/Home'))
 const Salvage = React.lazy(() => import('./pages/knowMore/Salvage'))
@@ -28,19 +29,25 @@ const Routeing = () => {
                     <Signup />
                 </Suspense>
             } />
-            <Route path='/profile' element={
-                <Suspense fallback={<Loading />}>
-                    <UserChangeProfile />
-                </Suspense>
-            } />
             <Route path='/' element={
                 <Suspense fallback={<Loading />}>
                     <Home />
                 </Suspense>
             } />
+            <Route path='/profile' element={
+                <Suspense fallback={<Loading />}>
+                    <UserChangeProfile />
+                </Suspense>
+            } />
+
             <Route path='/about' element={
                 <Suspense fallback={<Loading />}>
                     <About />
+                </Suspense>
+            } />
+             <Route path='/videos' element={
+                <Suspense fallback={<Loading />}>
+                    <Videos />
                 </Suspense>
             } />
             <Route path='/salvage' element={

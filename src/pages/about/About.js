@@ -47,9 +47,9 @@ const About = () => {
     }
     return (
         <div onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} className='about'>
-            <Nav activeNavMb={activeNavMb} />
+            <Nav active={'about'} activeNavMb={activeNavMb} />
             <div className='about_contaienr'>
-            <p className='about_header'>About us</p>
+            <h1 className='about_header'>ABOUT US</h1>
             <p className='about_article'> AMS is a leading shipping company that provides
                 reliable, sustainabli and safe services to businesses
                 across the middle east, red sea, arabian gulf and east coast

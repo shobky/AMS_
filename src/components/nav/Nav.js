@@ -26,12 +26,13 @@ const Nav = ({ active, theme, activeNavMb }) => {
                         <button onClick={activeNavMb} className='nav_mobile-ico_btn'> {auth?.currentUser?.photoURL ? <img src={auth?.currentUser?.photoURL} className='nav_userimg-link' alt="" /> : <CgProfile />}</button> : ""
                 }
             </div>
-            <div id='navMb' className='nav_links-group__inActive'>
-                <Link to='/' className={active === 'home' ? 'nav_link__active' : "nav_link "}>Featured <RiArrowDropRightLine /></Link>
-                <Link to='/profile' className='nav_link'>Edit profile <RiArrowDropRightLine /></Link>
-                <Link to='/about' className='nav_link'>About <RiArrowDropRightLine /></Link>
-                <Link to='/videos' className='nav_link'>Videos <RiArrowDropRightLine /></Link>
-                <a href='#footer' className='nav_link'>Contact <RiArrowDropRightLine /></a>
+            <div id='navMb' className='nav_links-group__inActive nav_links-pc'>
+                <Link to='/' className={active === 'home' ? 'nav_link__active' : "nav_link "}>Featured <RiArrowDropRightLine className='nav_arr-ico' /></Link>
+                <Link to='/about' className={active === 'about' ? 'nav_link__active' : "nav_link "}>About <RiArrowDropRightLine className='nav_arr-ico' /></Link>
+                <Link to='/videos' className={active === 'videos' ? 'nav_link__active' : "nav_link "}>Videos <RiArrowDropRightLine className='nav_arr-ico' /></Link>
+                <br className='disnone-pc'/>
+                <Link to='/profile' className='nav_link'>Edit profile <RiArrowDropRightLine className='nav_arr-ico' /></Link>
+                <a href='#footer' className='nav_link'>Contact <RiArrowDropRightLine className='nav_arr-ico' /></a>
                 {
                     !auth?.currentUser ?
                         <Link to='/login' className='nav_login-link'>Login <RiLoginCircleFill /></Link>

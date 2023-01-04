@@ -1,0 +1,35 @@
+.videos {
+    min-height: 100vh;
+}
+
+.videos_container {
+    margin: 125px 20px;
+}
+
+.videos_header {
+    font-size: 2.5rem;
+}
+
+.videos_vid {
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+@media (width > 800px) {
+    .videos_container {
+        margin: 125px 60px;
+    }
+    
+    .videos_vid-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5vw;
+        margin-top: 5vh;
+    }
+    .videos_vid {
+        width: 100%;
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+    
+}

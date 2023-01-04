@@ -26,18 +26,23 @@ export const AuthProvider = ({ children }) => {
             // setAuthError(err.message)
             setLoading(false)
         })
+
     }
 
     const EmailAndPasswordLogin = (email, password) => {
         setLoading(true)
-        signInWithEmailAndPassword(auth, email, password).then(() => {
-            setLoading(false)
-            navigate('/')
-        }).catch((error) => {
-            alert(error.message)
-            setLoading(false)
-            // setAuthError(error.message)
-        })
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                // ...
+                setLoading(false)
+                navigate('/')
+
+            })
+            .catch((error) => {
+                setLoading(false)
+                console.log(error, error.message)
+            });
     }
 
     // const login = async () => {

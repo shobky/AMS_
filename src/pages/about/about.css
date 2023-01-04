@@ -13,10 +13,36 @@
 }
 
 .about_header {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-transform: capitalize;
 }
 
 .about_article {
     margin-top: 40px;
     font-size: 1rem;
+}
+
+@media (width > 800px) {
+    .about {
+        min-height: 60vh;
+
+    }
+
+    .about_contaienr {
+        margin: 125px 60px;
+
+    }
+
+    .about_header {
+        font-size: 3rem;
+        text-transform: capitalize;
+    }
+
+    .about_article {
+        margin-top: 40px;
+        font-size: 1rem;
+        width: 50vw;    
+        min-width: 600px;
+
+    }
 }

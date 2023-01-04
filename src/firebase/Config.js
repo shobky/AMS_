@@ -31,5 +31,5 @@ export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
 export const signInWithGoogleRedirect = () => signInWithRedirect(auth, provider);
 
 // export const db = getFirestore(app);
-auth.languageCode = 'it'
-auth.useDeviceLanguage();
+// auth.languageCode = 'it'
+// auth.useDeviceLanguage();

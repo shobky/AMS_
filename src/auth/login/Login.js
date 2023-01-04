@@ -13,7 +13,8 @@ const Login = () => {
 
     const handleSubmitLogin = (e) => {
         e.preventDefault()
-        EmailAndPasswordLogin(emailRef, passwordRef)
+        EmailAndPasswordLogin(emailRef.current.value, passwordRef.current.value)
+
     }
     return (
         <div className='auth'>
@@ -23,11 +24,11 @@ const Login = () => {
             <form onSubmit={handleSubmitLogin} autoComplete='on' className='auth_form'>
                 <div className='auth_input_div'>
                     <label>Email</label>
-                    <input ref={emailRef} autoCapitalize='off' placeholder='example@provider.com' className='auth_input' />
+                    <input required={true} ref={emailRef} autoCapitalize='off' placeholder='example@provider.com' className='auth_input' />
                 </div>
                 <div className='auth_input_div'>
                     <label>Password</label>
-                    <input autoCapitalize='off' ref={passwordRef} placeholder='**************' className='auth_input auth_input__password' />
+                    <input required={true} autoCapitalize='off' ref={passwordRef} placeholder='**************' className='auth_input auth_input__password' />
                 </div>
                 <button disabled={loading} type='submit' className='auth_button'>{loading ? 'loading...' : 'Sign In'}</button>
                 <p className='auth_or'>OR</p>

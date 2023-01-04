@@ -43,7 +43,7 @@ const Footer = () => {
                         <p className='footer_header'>Browse  more</p>
                         <Link to='/' className='footer_link'>featured <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
                         <Link to='/about' className='footer_link'>about <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
-                        <Link to='/vides' className='footer_link'>videos <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
+                        <Link to='/videos' className='footer_link'>videos <IoIosArrowForward className='footer_link_arr-ico' /> </Link>
 
                         <p className='footer_link footer_links-header'>KNOW MORE</p>
                         <div className='footer_knowmore-links'>
