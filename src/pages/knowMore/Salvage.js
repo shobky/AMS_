@@ -6,7 +6,21 @@ import IMbigGample from '../../assets/media/theBigGample.jpg'
 import bigGampleArticle from '../../assets/media/bigGampleArticle.jpg'
 import gna from '../../assets/media/gnaaden.jpg'
 import bab from '../../assets/media/babaden.jpg'
+import bab1 from '../../assets/salvageShips/bab.jpg'
 import louisia from '../../assets/media/louisia.jpg'
+import louisia1 from '../../assets/salvageShips/lousia (1).jpg'
+import louisia2 from '../../assets/salvageShips/lousia (2).jpg'
+import boats1 from '../../assets/salvageShips/boats (1).jpg'
+import boats3 from '../../assets/salvageShips/boats (3).jpg'
+import boats4 from '../../assets/salvageShips/boats (4).jpg'
+import boats5 from '../../assets/salvageShips/boats (5).jpg'
+import tugs1 from '../../assets/salvageShips/tugs (1).jpg'
+import tugs6 from '../../assets/salvageShips/tugs (6).jpg'
+import rig1 from '../../assets/salvageShips/rig (1).jpg'
+import rig2 from '../../assets/salvageShips/rig.jpg'
+import rig3 from '../../assets/salvageShips/rig (3).jpg'
+import almasila from '../../assets/salvageShips/almasila.jpg'
+import almasila1 from '../../assets/salvageShips/almasila (2).jpg'
 
 
 
@@ -64,20 +78,63 @@ const Salvage = () => {
                 <img alt='the article from the newspaper' className='km_salvage_newspaper-img' src={bigGampleArticle} />
             </div>
             <h1 className='km_salvage_h1n2'>More ships salvaged by AMS</h1>
+            <br />
+            <br />
             <div className='moreShips_big-container'>
                 <div className="km_salvage_more-ships">
-                    <img alt='' src={gna} className="km_salvage_more-ships_img" />
-                    <p className="km_salvage_more-ships_name">GNA Aden Yemen <span>2018</span></p>
+                    <p className="km_salvage_more-ships_name">RIG 105 Suez <span>2016</span></p>
+                    <div className='km_salvage_more-ships_imgs'>
+                        <img alt='' src={rig1} className="km_salvage_more-ships_img" />
+                        <img alt='' src={rig2} className="km_salvage_more-ships_img" />
+                        <img alt='' src={rig3} className="km_salvage_more-ships_img" />
+                    </div>
                 </div>
+
                 <div className="km_salvage_more-ships">
-                    <img alt='' src={louisia} className="km_salvage_more-ships_img" />
                     <p className="km_salvage_more-ships_name">LOUISA Sharjah UAE <span>2021</span></p>
+                    <div className='km_salvage_more-ships_imgs'>
+                        <img alt='' src={louisia1} className="km_salvage_more-ships_img" />
+                        <img alt='' src={louisia} className="km_salvage_more-ships_img" />
+                        <img alt='' src={louisia2} className="km_salvage_more-ships_img" />
+                    </div>
                 </div>
                 <div className="km_salvage_more-ships">
-                    <img alt='' src={bab} className="km_salvage_more-ships_img" />
                     <p className="km_salvage_more-ships_name">BAB Aden Yamen <span>2018</span></p>
+                    <div className='km_salvage_more-ships_imgs'>
+                        <img alt='' src={bab} className="km_salvage_more-ships_img" />
+                        <img alt='' src={bab1} className="km_salvage_more-ships_img" />
+                    </div>
                 </div>
-                <p className='km_salvage_more_adn-more'>And more <span>ALMASILA Aden Yamen 2018</span>, <span>Tugs in Adan Yamen</span>, <span>Boat sinks in Sharjah UAE</span>..</p>
+                <div className="km_salvage_more-ships">
+                    <p className="km_salvage_more-ships_name">Boat sinks in Shajrah UAE <span>2020</span></p>
+                    <div className='km_salvage_more-ships_imgs'>
+                        <img alt='' src={boats4} className="km_salvage_more-ships_img" />
+                        <img alt='' src={boats5} className="km_salvage_more-ships_img" />
+                        <img alt='' src={boats1} className="km_salvage_more-ships_img" />
+                        <img alt='' src={boats3} className="km_salvage_more-ships_img" />
+                    </div>
+                </div>
+                <div className="km_salvage_more-ships">
+                    <p className="km_salvage_more-ships_name">Tugs in Aden Yamen <span>2018</span></p>
+                    <div className='km_salvage_more-ships_imgs'>
+                        <img alt='' src={tugs1} className="km_salvage_more-ships_img" />
+                        <img alt='' src={tugs6} className="km_salvage_more-ships_img" />
+                    </div>
+                </div>
+                <div className="km_salvage_more-ships">
+                    <p className="km_salvage_more-ships_name">ALMASILA Aden Yamen <span>2018</span></p>
+                    <div className='km_salvage_more-ships_imgs'>
+                        <img alt='' src={almasila} className="km_salvage_more-ships_img" />
+                        <img alt='' src={almasila1} className="km_salvage_more-ships_img" />
+                    </div>
+                </div>
+                <div className="km_salvage_more-ships">
+                    <p className="km_salvage_more-ships_name">GNA Aden Yemen <span>2018</span></p>
+                    <div className='km_salvage_more-ships_imgs'>
+                        <img alt='' src={gna} className="km_salvage_more-ships_img-lonely" />
+                    </div>
+                </div>
+                {/* <p className='km_salvage_more_adn-more'>And more <span>ALMASILA Aden Yamen 2018</span>, <span>Tugs in Adan Yamen</span>, <span>Boat sinks in Sharjah UAE</span>..</p> */}
             </div>
         </div>
     )

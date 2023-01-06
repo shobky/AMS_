@@ -23,16 +23,9 @@
     z-index: -1;
 }
 
-/* img {
-    transition: ease-in-out .5s;
-} */
-
-
-
-/* fjadklfjakl;fd */
-
 @media (width > 800px) {
     .carousel_img1 {
+        /* background-image: url('../../assets/media/ownership.jpeg'); */
         background-image: url('../../assets/ship1.jpg');
         background-size: cover;
         background-position: bottom;
@@ -171,6 +164,7 @@
 @media (width < 800px) {
     .carousel_img1 {
         background-image: url('../../assets/ship1.jpg');
+        /* background-image: url('../../assets/media/ownership.jpeg'); */
         background-size: cover;
         background-position: calc(5%);
         background-repeat: no-repeat;

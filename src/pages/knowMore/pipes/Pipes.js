@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom'
 import './pipes.css'
 import pipesImg1 from '../../../assets//media/pipes234.jpg'
 import pipesImgportrait from '../../../assets//media/pipes555.jpg'
-
+import pipes1 from '../../../assets/media/pipes (1).jpg'
+import pipes2 from '../../../assets/media/pipes (2).jpg'
+import pipes3 from '../../../assets/media/pipes (3).jpg'
+import pipes4 from '../../../assets/media/pipes (4).jpg'
+import pipes5 from '../../../assets/media/pipes (5).jpg'
 
 const Pipes = () => {
     return (
@@ -31,6 +35,13 @@ const Pipes = () => {
                     </div>
                 </div>
 
+                <div className='km_pipes-wrap'>
+                    <img alt='tanks-pipes' className='km_pipes-wrap_img' src={pipes1} />
+                    <img alt='tanks-pipes' className='km_pipes-wrap_img' src={pipes2} />
+                    <img alt='tanks-pipes' className='km_pipes-wrap_img' src={pipes3} />
+                    <img alt='tanks-pipes' className='km_pipes-wrap_img' src={pipes4} />
+                    <img alt='tanks-pipes' className='km_pipes-wrap_img' src={pipes5} />
+                </div>
             </article>
 
         </div>
