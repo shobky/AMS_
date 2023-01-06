@@ -39,7 +39,6 @@ const Carousel = () => {
             src: 'img4', header: 'TANKS & PIPES',
             article: "AMS is one of the main manufactures of storage tanks, pressure vessels and vertical storage tanks oil storeage terminals in the UAE and other countries.",
             link: 'tanks&pipes',
-            color: 'carousel_article_black'
         },
         {
             src: 'img5', header: 'DISEL TRADING',
@@ -47,7 +46,7 @@ const Carousel = () => {
             link: 'trading',
         },
         {
-            src: 'img6', header: 'SHIP PARTS',
+            src: 'img6', header: 'SPARE PARTS',
             article: "AMS offers a wide range of products suitable for diesel engines and more",
             link: 'parts',
         },

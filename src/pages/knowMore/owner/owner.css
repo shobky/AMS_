@@ -1,7 +1,6 @@
 @media (width > 800px) {
     .km_owner_flex {
         display: flex;
-        align-items: center;
         gap: 5vw;
     }
 
@@ -31,6 +30,7 @@
         border-radius: 25px;
         margin-top: 10px;
         margin-bottom: 35px;
+        max-width: 600px;
     }
 }
 

@@ -26,7 +26,7 @@
 @media (width > 800px) {
     .carousel_img1 {
         /* background-image: url('../../assets/media/ownership.jpeg'); */
-        background-image: url('../../assets/ship1.jpg');
+        background-image: url('../../assets/newimg2.jpeg');
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -59,7 +59,7 @@
     }
 
     .carousel_img4 {
-        background-image: url('../../assets/pipeshq.jpg');
+        background-image: url('../../assets/media/pipes234.jpg');
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
@@ -163,7 +163,7 @@
 
 @media (width < 800px) {
     .carousel_img1 {
-        background-image: url('../../assets/ship1.jpg');
+        background-image: url('../../assets/newimg2.jpeg');
         /* background-image: url('../../assets/media/ownership.jpeg'); */
         background-size: cover;
         background-position: calc(5%);
@@ -203,7 +203,7 @@
     }
 
     .carousel_img4 {
-        background-image: url('../../assets/pipeshq.jpg');
+        background-image: url('../../assets/media/pipes234.jpg');
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;

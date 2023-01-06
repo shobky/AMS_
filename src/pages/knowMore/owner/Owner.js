@@ -3,6 +3,9 @@ import { BiArrowBack } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import './owner.css'
 import ownerImg from '../../../assets/media/ownership.jpeg'
+import ownerImg2 from '../../../assets/newimg2.jpeg'
+import ownerImg3 from '../../../assets/newimg3.jpeg'
+
 const Owner = () => {
   return (
     <div className='km_owner'>
@@ -18,7 +21,12 @@ const Owner = () => {
             <p>Our fleet includes
               container, heavy lift, roro, rolo, tugs, passenger and crew boats.</p>
           </div>
-          <img alt='pipes' className='kmk_owner_arcl_img' src={ownerImg} />
+          <div>
+            <img alt='pipes' className='kmk_owner_arcl_img' src={ownerImg} />
+            <img alt='pipes' className='kmk_owner_arcl_img' src={ownerImg2} />
+            <img alt='pipes' className='kmk_owner_arcl_img' src={ownerImg3} />
+          </div>
+
         </div>
 
       </article>
