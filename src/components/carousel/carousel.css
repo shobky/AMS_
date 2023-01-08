@@ -48,7 +48,7 @@
     }
 
     .carousel_img3 {
-        background-image: url('../../assets/ship2.jpg');
+        background-image: url('../../assets/salvageShips/boats (3).jpg');
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -190,7 +190,7 @@
     }
 
     .carousel_img3 {
-        background-image: url('../../assets/ship2.jpg');
+        background-image: url('../../assets/salvageShips/boats (3).jpg');
         background-size: cover;
         background-position: calc(10%);
         background-repeat: no-repeat;
