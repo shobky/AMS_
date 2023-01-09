@@ -21,10 +21,13 @@ const Owner = () => {
             <p>Our fleet includes
               container, heavy lift, roro, rolo, tugs, passenger and crew boats.</p>
           </div>
-          <div>
-            <img alt='pipes' className='kmk_owner_arcl_img' src={ownerImg} />
-            <img alt='pipes' className='kmk_owner_arcl_img' src={ownerImg2} />
-            <img alt='pipes' className='kmk_owner_arcl_img' src={ownerImg3} />
+          <br/>
+          <br/>
+
+          <div className='km_owner_more-ships_imgs'>
+            <img alt='owner' className='km_owner_more-ships_img' src={ownerImg} />
+            <img alt='owner' className='km_owner_more-ships_img' src={ownerImg2} />
+            <img alt='owner' className='km_owner_more-ships_img' src={ownerImg3} />
           </div>
 
         </div>

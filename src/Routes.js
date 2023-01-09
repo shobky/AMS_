@@ -7,7 +7,9 @@ import E404 from './components/404/E404'
 import Loading from './components/loading/Loading'
 import About from './pages/about/About'
 import UserChangeProfile from './pages/edit profile/UserChangeProfile'
+import Bulding from './pages/knowMore/building/Building'
 import Parts from './pages/knowMore/parts/Parts'
+import Trading from './pages/knowMore/trading/Trading'
 import Videos from './pages/videos/Videos'
 const Owner = React.lazy(() => import('./pages/knowMore/owner/Owner'))
 const Home = React.lazy(() => import('./pages/home/Home'))
@@ -53,6 +55,16 @@ const Routeing = () => {
             <Route path='/salvage' element={
                 <Suspense fallback={<Loading />}>
                     <Salvage />
+                </Suspense>
+            } />
+             <Route path='/building' element={
+                <Suspense fallback={<Loading />}>
+                    <Bulding />
+                </Suspense>
+            } />
+                  <Route path='/trading' element={
+                <Suspense fallback={<Loading />}>
+                    <Trading />
                 </Suspense>
             } />
             <Route path='/tanks&pipes' element={

@@ -18,6 +18,7 @@
     .km_owner_header {
         font-size: 5rem;
         margin-top: 30px;
+        margin-bottom: 25px;
     }
 
     .km_owner_article {
@@ -25,7 +26,8 @@
         margin-left: 2px;
 
     }
-    .kmk_owner_arcl_img {
+
+    .km_owner_more-ships_img {
         height: 57vh;
         border-radius: 25px;
         margin-top: 10px;
@@ -65,12 +67,27 @@
         font-weight: bold;
         color: rgb(38, 145, 245);
     }
-
+/* 
     .kmk_owner_arcl_img {
         width: 100%;
         border-radius: 25px;
         margin-top: 25px;
         margin-bottom: 35px;
+    } */
+    .km_owner_more-ships_imgs {
+        display: flex;
+        overflow-x: scroll;
+        gap: 1px;
+        margin-left: -19px;
+        width: calc(100% + 39px);
+        margin-bottom: 25px;
+        padding-bottom: 0px;
+        max-height: 200px;
+
+    }
+    .km_owner_more-ships_img {
+        width: 80%;
+        max-height: 500px;
     }
 
 }

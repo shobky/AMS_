@@ -4,12 +4,12 @@ import { TfiArrowCircleLeft, TfiArrowCircleRight } from 'react-icons/tfi'
 import { Link } from 'react-router-dom';
 import { BsLink45Deg } from 'react-icons/bs';
 import { useEffect } from 'react';
-import img1 from '../../assets/ship1.jpg'
-import img2 from '../../assets/ship.jpg'
-import img3 from '../../assets/ship2.jpg'
-import img4 from '../../assets/pipeshq.jpg'
-import img5 from '../../assets/trading.jpg'
-import img6 from '../../assets/parts.jpg'
+import img1 from '../../assets/newimg2.jpeg'
+import img2 from '../../assets/building.jpeg'
+import img3 from '../../assets/media/theBigGample.jpg'
+import img4 from '../../assets/media/pipes234.jpg'
+import img5 from '../../assets/trading.jpeg'
+import img6 from '../../assets/parts.jpeg'
 
 
 
@@ -29,6 +29,7 @@ const Carousel = () => {
             src: 'img2', header: 'SHIP BUILDING',
             article: "We specialize in building & repairign all kinds of sihps. Approved by  the Classification Societies Stadndard's Requirements.",
             link: 'building',
+            color:  'carousel_article_black'
         },
         {
             src: 'img3', header: 'SHIP SALVAGE',
@@ -39,16 +40,22 @@ const Carousel = () => {
             src: 'img4', header: 'TANKS & PIPES',
             article: "AMS is one of the main manufactures of storage tanks, pressure vessels and vertical storage tanks oil storeage terminals in the UAE and other countries.",
             link: 'tanks&pipes',
+            color:  'carousel_article_black'
+
         },
         {
             src: 'img5', header: 'DISEL TRADING',
             article: "AMS is one of the premium Importers and exporters of petroleum products in the Middle East",
             link: 'trading',
+            color:  'carousel_article_black'
+
         },
         {
             src: 'img6', header: 'SPARE PARTS',
             article: "AMS offers a wide range of products suitable for diesel engines and more",
             link: 'parts',
+            color:  'carousel_article_black'
+
         },
     ];
 
